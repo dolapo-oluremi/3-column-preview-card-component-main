@@ -1,0 +1,145 @@
+/* import google fonts for the project */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* removes all preset padding/margin */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* define a division to cover homescreen and set display to flex to center card  */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.landing-page {
+    width: 100vw;
+    height: 100vh, fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* define card component dimensions and display */
+.card-components {
+    width: 70vw;
+    display: flex;
+    padding: 5rem;
+} 
+/* define individual card elements */
+ .card-components > div{
+    height: 60vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+/* set font, size and color on h1 and paragraph elements */
+
+.card-components h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-components p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* set image size on wider screen in percentage */
+
+img {
+    width: 40%;
+}
+
+a {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px hsl(0, 0%, 95%) solid;
+    transition: 0.5s ease-out;
+}
+
+.suv a {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px hsl(0, 0%, 95%) solid;
+    transition: 0.5s ease-out;
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px hsl(0, 0%, 95%) solid;
+    transition: 0.5s ease-out;
+}
+
+.attribution {
+    text-align: center;
+}
+
+/* set reponsiveness on mobile devices/smaller screens */
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 80px;
+    }
+    .card-components {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+    .card-components>div {
+        height: 50vh;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
