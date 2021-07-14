@@ -31,7 +31,7 @@ body {
 /* define individual card elements */
  .card-components > div{
     height: 60vh;
-    padding: 3rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,6 +116,7 @@ a {
 
 .attribution {
     text-align: center;
+    padding: 3rem;
 }
 
 /* set reponsiveness on mobile devices/smaller screens */
